@@ -24,6 +24,7 @@ DISCLAIMER -  If the repair takes longer than 1 min then it will be automaticall
 Finals: The 4 teams with the most points will play 2 extra matches. The highest scoring team will have first choice on who they would like to play against. The remaining 2 teams will play against each other. Winners play winners for 1st and 2nd place and losers play losers for 3rd and 4th place.
 
 Sample Structure:
+
 | Team | Wins | Losses | Ties | Points |
 | --- | ---   | ---    | ---  | ---    |
 | Team 1 | 4 | 0 | 0 | 12|
