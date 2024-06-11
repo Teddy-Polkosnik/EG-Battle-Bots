@@ -49,7 +49,76 @@ Ideal/Expected Timeline:
 - [Day 0 - 1] Friday: Groups are made 
 - [Day 1 - 4] Monday - Tuesday: CAD/Design is completed 
 - [Day 4 - 7] Tuesday - Friday: Trial/Error Manufacturing/Designing 
-- [Day 7 - 14] Friday-Friday: Robot Tested and Manufactured 
+- [Day 7 - 14] Friday-Friday: Robot Tested and Manufactured
+
+<br>
+
+## Materials:
+This competition allows you to get pretty creative in that you are allowed to use most materials in OL with the exception of any and all VEX parts. All print requests will be submitted to proto through a google sheet and printed based on a “first come first serve basis”.
+
+> DISCLAIMER: Proto is allowed to add or subtract from this list at any point in time to ensure safety and fairness.
+
+### Allowed Materials:
+**3D Printer:**
+- PLA - 20% infill density maximum (default wall amount + size)
+- PLA-CF - 20% infill density maximum (default wall amount + size)
+- ABS - 15% infill density maximum (only 1 submission total per group)
+
+**OL Crafting Table:**
+- Cardboard - Any
+- Foam - Any
+- Tape - Any
+- Hot Glue - Any
+- Velcro - Any
+- ⅛ in birch 12x12 sheets - (Max 2 per group)
+- ⅛ in acrylic 12x12 sheet - (Max 1 per group)
+
+**Sensors/Motors:**
+- Servos - (Big or Small, Continuous, Positional)
+- DC Motors - (5V, 7V, 9V)
+- Stepper Motors - (5V, 12V)
+- Ultrasonic Sensor - Any
+- Cameras - Any
+- Joysticks - Any
+- Buttons - Any
+
+**Microcontrollers:**
+- Arduino - (Nano, Uno, Mega)
+- Esp32- Any
+- Raspberry Pi - (Pi-0, Pi-3)
+- Teensy - (4.0)
+
+**Others:**
+- Breadboard - Any
+- Solder/Soldering - Any
+- Motor Drivers - Any
+- Motor Shields - Any 
+
+### Prohibited Materials:
+**General:**
+- Any Vex Parts - (no metal of any kind, motors, wheels, or gears)
+- Any Metal - (dangerous)
+- Any Liquids - (dangerous)
+- Toxic/Hazardous Things - (dangerous)
+- Liquid Glue  - (damage components)
+- Lasers -  (dangerous)
+- String - (tangling)
+- Taser Devices- (dangerous)
+- EMP devices- (will disable all electronics)
+
+**3D Printer:**
+- PETG - (hard to print)
+- PolyCarbonate (PC) - (hard to print)
+- PVA - (don’t have)
+
+**Composites:**
+- Carbon Fiber - (no access)
+- Fiberglass - (no access)
+
+**Sensors/Motors:**
+- 12V+ DC Motors- (too much power)
+- Electromagnets- (will disable other motors)
+
 
 
 
