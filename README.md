@@ -7,6 +7,9 @@ Created By: Teddy Polkosnik
 ## Purpose:
 The aim of this community event is to give new TA’s Prototyping experience, an opportunity to bond/get to know other TA’s, and make a pretty cool project in the process. There is no previous knowledge/experience required to participate although it helps to have some. TA’s will create a small battle bot to battle in a tournament against other teams. I created this idea because I consider myself a maker and love to make cool stuff. In reality this was inspired by Proto’s use of mini “battle bots” to demonstrate physics concepts that are relevant to MRR/LAZ Robots.
 
+> DISCLAIMER: This event was created with the intention of being solely volunteer based and is not required to participate if not interested. You will not be able to charge for the time you work on this project. This is intended as a community project to gain some prototyping experience not as a method to get some extra cash.
+
+
 <br>
 
 ## Overview:
