@@ -11,7 +11,7 @@
 
 
 ## Purpose:
-The aim of this community event is to give new TA’s Prototyping experience, an opportunity to bond/get to know other TA’s, and make a pretty cool project in the process. There is no previous knowledge/experience required to participate although it helps to have some. Teams of 3-4 TA's will create a small battle bot to compete in a tournament against other teams. I created this idea because I like to make cool stuff. In reality this was inspired by Proto’s use of mini “battle bots” to demonstrate physics concepts that are relevant to MRR/LAZ Robots.
+The aim of this community event is to give new TA’s Prototyping experience, an opportunity to bond/get to know other TA’s, and make a pretty cool project in the process. There is no previous knowledge/experience required to participate although it helps to have some. Teams of 3-5 TA's will create a small battle bot to compete in a tournament against other teams. I created this idea because I like to make cool stuff. In reality this was inspired by Proto’s use of mini “battle bots” to demonstrate physics concepts that are relevant to MRR/LAZ Robots.
 
 <br>
 
@@ -55,7 +55,19 @@ Teams will have 2 weeks to design and manufacture a small battle Robot. After de
 
 
 ### Competition: 
-Robot Teams will be randomly assigned to brackets. Each round will be 3 mins long with a 1 min break between each round for strategy discussion or quick repairs. Quick repairs include taping parts, plugging in a new battery/charging a battery, and or adjusting wheels and motors. There will be a maximum of 5 rounds. If after 5 rounds there is no winner then the game is declared a tie. Win = 3 points, Tie = 1 Points, Lose = 0 Points. 
+Robot Teams will be randomly assigned to play each other for points then go on to finals. Each round will be 3 mins long with a 1 min break between each round for strategy discussion or quick repairs. Quick repairs include taping parts, plugging in a new battery/charging a battery, and or adjusting wheels and motors. There will be a maximum of 5 rounds. If after 5 rounds there is no winner then the game is declared a tie.
+
+<div align="center">
+  
+  **Point System** <br>
+  Win = 3 points <br>
+  Tie = 1 Points <br>
+  Lose = 0 Points <br>
+
+</div>
+
+
+<br>
 
 > [!WARNING]
 > If the repair takes longer than 1 min then it will be automatically considered a loss.
@@ -172,6 +184,10 @@ This competition allows you to get pretty creative in that you are allowed to us
 
 
 ## Rules: 
+
+### Group Members: 
+Teams must be at 3 and no more then 5 per group and each group is encouraged to have at least 1 new TA. [Flexible]
+
 
 ### Robot Must Have: 
 - Robots must be either autonomous OR controlled wirelessly (RF/WIFI/BLUETOOTH). 
