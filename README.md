@@ -1,4 +1,3 @@
-
 <div align= "center">
 
 # EG Battle Bots
@@ -21,7 +20,7 @@
 
 
 ## Purpose:
-The aim of this community event is to give new TA’s Prototyping experience, an opportunity to bond/get to know other TA’s, and make a pretty cool project in the process. There is no previous knowledge/experience required to participate although it helps to have some. Teams of 3-5 TA's will create a small battle bot to compete in a tournament against other teams. I created this idea because I like to make cool stuff. In reality this was inspired by Proto’s use of mini “battle bots” to demonstrate physics concepts that are relevant to MRR/LAZ Robots.
+The aim of this community event is to give new TA’s Prototyping experience, an opportunity to bond/get to know other TA’s, and make a pretty cool project in the process. There is no previous knowledge/experience required to participate although it helps to have some. Teams of 3-5 will create a small battle bot to compete in a tournament against other teams. I created this idea because I like to make cool stuff. In reality this was inspired by Proto’s use of mini “battle bots” to demonstrate physics concepts that are relevant to MRR/LAZ Robots.
 
 <br>
 
