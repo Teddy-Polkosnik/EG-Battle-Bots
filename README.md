@@ -7,10 +7,10 @@
 </div>
 
 # Important Links:
-- []()
-- []()
-- []()
-- []()
+- [Overview](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#overview)
+- [Materials](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#materials)
+- [Rules](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#rules)
+- [Safety](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#safety)
 - []()
 
 
