@@ -21,7 +21,7 @@ The aim of this community event is to give new TA’s Prototyping experience, an
 
 <div align= "center">
 
-[BATTLE BOTS COMPETITION APPLICATION GOOGLE FORM](https://forms.gle/bmyTjucR376dzzjdA)
+[BATTLE BOTS COMPETITION APPLICATION FORM](https://forms.gle/bmyTjucR376dzzjdA)
 
 </div>
 
@@ -38,12 +38,17 @@ The aim of this community event is to give new TA’s Prototyping experience, an
 ### Design Phase:
 Teams will have 1-2 weeks to design and manufacture a small Robot. After design and manufacturing has been completed it will then be checked by a member of proto to ensure that it follows all the rules and regulations of the competition. Groups are allowed to make design changes they deem necessary at any point in time during the competition as long as it falls within the rules and regulations. Design changes and prints will be given preference during the 1-2 week manufacturing window. After that window has passed groups can submit a request to print but cannot be guaranteed a print.
 
+<div align= "center">
+
+[BATTLE BOTS 3D PRINTING SUBMISSION FORM](https://forms.gle/Wx8qMMaEMV4PDC32A)
+
+</div>
+
 <br>
 
 > [!CAUTION]
 > DISCLAIMER: Any member of proto is allowed to deny any Robot for any justified safety/design reason. Any member of proto is allowed to deny a print request for any justified reasons.
 
- 
 <br> 
 
 
