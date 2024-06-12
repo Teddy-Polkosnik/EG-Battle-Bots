@@ -6,16 +6,17 @@
 
 </div>
 
+
+
+
+
+
 ## Important Links:
 
 ### | [Overview](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#overview) | [Materials](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#materials)  | [Rules](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#rules)  | [Safety](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main?tab=readme-ov-file#safety)  |
 
-### 
 
-### 
-### 
-### 
-### []()
+
 
 
 
@@ -36,6 +37,9 @@ The aim of this community event is to give new TA’s Prototyping experience, an
 
 
 <br>
+
+
+
 
 
 
@@ -118,6 +122,14 @@ Ideal/Expected Timeline:
 <br>
 
 
+
+
+
+
+
+
+
+
 ## Materials:
 This competition allows you to get pretty creative in that you are allowed to use most materials in OL with the exception of any and all VEX parts. All print requests will be submitted to proto through a google sheet and printed based on a “first come first serve basis”.
 
@@ -190,6 +202,11 @@ This competition allows you to get pretty creative in that you are allowed to us
 
 > [!WARNING]
 > If you aren’t sure if you will be in violation of any of the rules, contact Proto ASAP.
+
+
+
+
+
 
 
 ## Rules: 
@@ -275,7 +292,58 @@ There is a 3.3V Minimum and a 18V Maximum. You can use no more than 2 total, 9 V
 The battery to power your microcontroller is not included in the total count for the number of batteries. To clarify, 1 battery for the microcontroller + 1-2 batteries to power the motor(s).
 
 
+
+
+
+
 ## Safety:
+At least 1 member of the Team must attend the safety meeting that will occur before all of the matches begin. It will cover safety precautions plus any and all last minute competition information.
+
+[Safety Presentation](pending)
+
+
+
+
+
+
+
+<br> 
+
+## Bannable Offenses: 
+
+The following are a list of offenses that will cause you to be kicked out of the competition.
+- Any use of prohibited materials 
+- Any violation of the rules
+- Use of metal of any kind at all
+- Purchasing extra materials of any kind
+- Ignoring any safety precautions
+- Cheating of any kind 
+
+<br>
+
+
+
+
+## How To Win?
+
+**Win Conditions:**
+
+The opposing Robot is unable to continue, this means but is not limited to: 
+- Battery dies 
+  - Justification: Your fault you didn’t charge it, you can replace/charge the battery in between rounds if you don’t go over the battery limit. (See Electrical Section)
+- Robot Weapon Breaks
+  - Justification: Broken means that it no longer has a method of attacking and therefore cannot win anymore.
+- Robot is flipped over and cannot get up (10 seconds to get up similar to boxing)
+  - Justification: The Robot cannot move around the arena 
+- Robot can no longer traverse the arena (broken wheels/motor/movement…etc)
+  - Justification: The Robot cannot move around the arena
+
+In the event that both Robots cannot continue to move before the round ends then go to beyblade rules (last one moving wins) or you cannot determine which Robot stopped moving first then both teams will be allowed 3 mins to make adjustments to continue. After the 3 min
+period the round will start and it will go back to beyblade rules.
+
+> [!WARNING]
+> If you aren’t sure if you will be in violation of any of the rules, contact proto ASAP.
+
 
 
 
