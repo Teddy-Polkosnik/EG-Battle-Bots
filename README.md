@@ -148,15 +148,75 @@ This competition allows you to get pretty creative in that you are allowed to us
 - Robots must include a “KILL SWITCH” to stop the robot entirely.
 - Robots must include protective casing around any sensors to prevent damage to components.
 
+**Example Abilities are listed but not limited to:**
+- Flipping Mechanism
+- Lifting Mechanism
+- Claw Mechanism
+- Spinning/Rotating Mechanism 
+- Ramming Mechanism 
+
+**Example “Weapons” are listed but not limited to:**
+- Spinning Blades 
+- Sword
+- Staff
+- Hammer
+
+**Prohibited Weapons are listed but not limited to:**
+
+**Using electricity as a weapon**
+- Taser
+- EMP
+  
+**Using magnetism as a weapon**
+- Electromagnets
+  
+**Using metal at all**
+- No Vex Parts
+
+**Using Glue/Liquids/ Sticky Substances**
+- No Liquids
+- No Glue 
+- No String
+
+**Weapons that are single use**
+- Blades that detach on attack 
+- Parts that intentionally break 
+- Firing single/multiple use projectiles (1 shot or amo)
+
+> [!CAUTION]
+> DISCLAIMER: Proto is allowed to add to this list whenever necessary in order to maintain a fair and competitve environment.
+
+
+<br>
+
 ### Combat: 
 - 3 min rounds
 - 1 min break 
 - Teams are allowed to "pin" thier opponents for no more than 10 seconds. If pinned for longer will receive a “Stand Still” penalty.
-- Teams are allowed to "TAP OUT" if feel Robot has sustained too much damage and can make repairs difficult. Tapping out will be consided as a loss for the team.
+- Teams are allowed to "TAP OUT" if feel Robot has sustained too much damage and can make repairs difficult. Tapping out will automatically be consided as a loss.
 
 
-## Penalties:
-“Stand Still” - you will stand still / not move your robot for a total of 10 seconds. If you move before the 10 seconds are up then another 10 seconds will be added on to the penalty.
+### Penalties:
+- “Stand Still” - you will stand still / not move your robot for a total of 10 seconds. If you move before the 10 seconds are up then another 10 seconds will be added on to the penalty.
+
+> [!CAUTION]
+> DISCLAIMER: Proto is allowed to add to this list whenever necessary in order to maintain a fair and competitve environment.
+
+### Size:
+- [4in x 4in x 4in] Minimum
+- [6in x 6in x 6in] Maximum
+
+### Electrical:
+There is a 3.3V Minimum and a 18V Maximum. You can use no more than 2 total, 9 Volt batteries total on the Robot. You may configure the batteries in a parallel or series configuration but note that you will not have the ability to change batteries during the break between rounds as both would be in use by your Robot. You can use no more than 900mAh total current. 
+
+> [!NOTE]
+> The standard 9V Battery ranges from 600mAh to 900mAh.
+
+The battery to power your microcontroller is not included in the total count for the number of batteries. To clarify, 1 battery for the microcontroller + 1-2 batteries to power the motor(s).
+
+
+## Safety:
+
 
 
 
