@@ -346,6 +346,12 @@ period the round will start and it will go back to beyblade rules.
 
 
 
+## Prize: 
+
+*Bragging Rights :>*
+
+
+
 
 
 
