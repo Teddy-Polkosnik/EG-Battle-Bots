@@ -148,6 +148,17 @@ This competition allows you to get pretty creative in that you are allowed to us
 - Robots must include a “KILL SWITCH” to stop the robot entirely.
 - Robots must include protective casing around any sensors to prevent damage to components.
 
+### Combat: 
+- 3 min rounds
+- 1 min break 
+- Teams are allowed to "pin" thier opponents for no more than 10 seconds. If pinned for longer will receive a “Stand Still” penalty.
+- Teams are allowed to "TAP OUT" if feel Robot has sustained too much damage and can make repairs difficult. Tapping out will be consided as a loss for the team.
+
+
+## Penalties:
+“Stand Still” - you will stand still / not move your robot for a total of 10 seconds. If you move before the 10 seconds are up then another 10 seconds will be added on to the penalty.
+
+
 
 
 
