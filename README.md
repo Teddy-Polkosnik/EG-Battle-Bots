@@ -348,8 +348,14 @@ period the round will start and it will go back to beyblade rules.
 
 ## Prize: 
 
+<div align="center">
+  
 *Bragging Rights :>*
+  
+</div>
 
+
+## [Teddy's Sample Battle Bots]():
 
 
 
