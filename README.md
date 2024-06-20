@@ -298,7 +298,15 @@ The battery to power your microcontroller is not included in the total count for
 ## Safety:
 At least 1 member of the Team must attend the safety meeting that will occur before all of the matches begin. It will cover safety precautions plus any and all last minute competition information.
 
+<div align= "center">
+  
 [Safety Presentation](https://docs.google.com/presentation/d/1WnJr_05Zy3mZJxf4uI5bkyWpSrifHJ2bXtNMxjK2iDg/edit#slide=id.g14072739ea5_12_0)
+
+</div>
+
+
+When manufacturing, exercise the use of safety goggles, gloves, and other safety equipment to prevent any injuries. Keep foods and liquids away from any electronics to avoid damage to electronics. If you need assistance when manufacturing or a refresher of any safety techniques, reach out to proto and we can provide some tips to ensure safety. 
+
 
 
 
