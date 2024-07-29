@@ -363,7 +363,7 @@ period the round will start and it will go back to beyblade rules.
 
 ## Resources: 
 ### [Teddy's Sample Battle Bots](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main/Teddy's%20Examples)
-### [CAD Reference Models]()
+### [CAD Reference Models](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main/CAD%20References)
 ### [Sample Wiring Diagrams](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main/Wiring%20Diagrams)
 ### [Battle Bots Ant Weight Competition](https://growingstems.org/ant-weight-competition/)
 ### [Battle Bots Wiki](https://battlebots.fandom.com/wiki/Category:Antweight_Robots)
