@@ -368,6 +368,7 @@ period the round will start and it will go back to beyblade rules.
 ### [Battle Bots Ant Weight Competition](https://growingstems.org/ant-weight-competition/)
 ### [Battle Bots Wiki](https://battlebots.fandom.com/wiki/Category:Antweight_Robots)
 ### [Radio Frequency Transmission Example](https://youtube.com/watch?v=KA_YE7AvFn0)
+### [Lego Gear References](https://grabcad.com/library/lego-technic-gears-1)
 
 
 
