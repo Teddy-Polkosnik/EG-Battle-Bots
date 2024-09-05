@@ -365,13 +365,17 @@ period the round will start and it will go back to beyblade rules.
 </div>
 
 ## Resources: 
+### This gets continously updated!
 ### [Teddy's Sample Battle Bots](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main/Teddy's%20Examples)
 ### [CAD Reference Models](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main/CAD%20References)
 ### [Sample Wiring Diagrams](https://github.com/Teddy-Polkosnik/EG-Battle-Bots/tree/main/Wiring%20Diagrams)
+### [Lego Gear References](https://grabcad.com/library/lego-technic-gears-1)
+### [ESP 2 ESP Connection](https://randomnerdtutorials.com/esp-now-one-to-many-esp32-esp8266/)
+### [ESP-NOW Hand Controller](https://www.instructables.com/ESP32-Joystick-Hand-Controller-ESP-NOW/)
 ### [Battle Bots Ant Weight Competition](https://growingstems.org/ant-weight-competition/)
 ### [Battle Bots Wiki](https://battlebots.fandom.com/wiki/Category:Antweight_Robots)
 ### [Radio Frequency Transmission Example](https://youtube.com/watch?v=KA_YE7AvFn0)
-### [Lego Gear References](https://grabcad.com/library/lego-technic-gears-1)
+
 
 
 
