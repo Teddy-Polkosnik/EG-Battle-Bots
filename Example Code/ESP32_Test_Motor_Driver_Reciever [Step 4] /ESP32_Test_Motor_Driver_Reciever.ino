@@ -1,21 +1,25 @@
+// Created by Teddy Polkosnik
+
 #include <esp_now.h>
 #include <WiFi.h>
 
 // right Joy Stick
-#define rightJoyX     32
-#define rightJoyY     35
-#define rightJoySW    12
+#define rightJoyX     32 // Joystick 1 X Value = pin 32
+#define rightJoyY     35 // Joystick 1 Y Value = pin 35
+#define rightJoySW    12 // Joystick 1 Switch Value = pin 12
+
+// All Joystick Values will be recived as integers
+int rightJoyXstate; 
+int rightJoyYstate;
+int rightJoySWstate;
+
+
 
 // left Joy Stick
-// [Delete if only using 1 Joystick]
+// [Add if using 2 Joysticks]
 // #define leftJoyX     26
 // #define leftJoyY     27
 // #define leftJoySW    25
-
-
-int rightJoyXstate;
-int rightJoyYstate;
-int rightJoySWstate;
 
 // int leftJoyXstate;
 // int leftJoyYstate;
@@ -33,13 +37,14 @@ uint8_t broadcastAddress[] = {0xA8, 0x42, 0xE3, 0xC8, 0x2d, 0x84};
 // Must match the receiver structure****
 typedef struct struct_message {
   // defines the data type you are sending
+
   // Right Data
   int rightJoyXvalue;
   int rightJoyYvalue;
   int rightJoySWvalue;
 
   // Left Data 
-  // [Delete if only using 1 Joystick]
+  // [Add if using 2 Joysticks]
   // int leftJoyXvalue;
   // int leftJoyYvalue;
   // int leftJoySWvalue;
@@ -73,16 +78,15 @@ void setup() {
   pinMode(rightJoySW, INPUT);
 
   // Left Joystick Configuration
-  // [Delete if only using 1 Joystick]
+  // [Add if using 2 Joysticks]
   // pinMode(leftJoyX, INPUT);
   // pinMode(leftJoyY, INPUT);
   // pinMode(leftJoySW, INPUT);
 
 
 
-  // Set device as a Wi-Fi Station
+  // Set device as a Wi-Fi Station this means to recieve
   WiFi.mode(WIFI_STA);
-
 
 
   // Init ESP-NOW
@@ -91,19 +95,14 @@ void setup() {
     return;
   }
 
-
-
   // Once ESPNow is successfully Init, we will register for Send CB to
   // get the status of Trasnmitted packet
   esp_now_register_send_cb(OnDataSent);
-
-
 
   // Register peer
   memcpy(peerInfo.peer_addr, broadcastAddress, 6);
   peerInfo.channel = 0;
   peerInfo.encrypt = false;
-
 
   // Add peer
   if (esp_now_add_peer(&peerInfo) != ESP_OK) {
@@ -111,6 +110,9 @@ void setup() {
     return;
   }
 }
+
+
+
 
 void loop() {
   // Set values to send
@@ -124,7 +126,7 @@ void loop() {
   handControllerData.rightJoySWvalue = rightJoySWstate;
 
   // Left Data Send
-  // [Delete if only using 1 Joystick]
+  // [Add if using 2 Joysticks]
   // leftJoyXstate = analogRead(leftJoyX);
   // handControllerData.leftJoyXvalue = leftJoyXstate;
   // leftJoyYstate = analogRead(leftJoyY);
