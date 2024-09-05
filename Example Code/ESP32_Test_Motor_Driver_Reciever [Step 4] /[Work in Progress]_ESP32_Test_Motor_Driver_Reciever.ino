@@ -1,149 +1,182 @@
+
 // Created by Teddy Polkosnik
 
 #include <esp_now.h>
 #include <WiFi.h>
 
-// right Joy Stick
-#define rightJoyX     32 // Joystick 1 X Value = pin 32
-#define rightJoyY     35 // Joystick 1 Y Value = pin 35
-#define rightJoySW    12 // Joystick 1 Switch Value = pin 12
+// MOTOR 1 Pins
+int motor1Pin1 = 27; // in1 = pin 27
+int motor1Pin2 = 26; // in2 = pin 26
+int enable1Pin = 14; // ena = pin 14
 
-// All Joystick Values will be recived as integers
-int rightJoyXstate; 
-int rightJoyYstate;
-int rightJoySWstate;
-
-
-
-// left Joy Stick
-// [Add if using 2 Joysticks]
-// #define leftJoyX     26
-// #define leftJoyY     27
-// #define leftJoySW    25
-
-// int leftJoyXstate;
-// int leftJoyYstate;
-// int leftJoySWstate;
+const int freq = 30000;
+const int pwmChannel = 0;
+const int resolution = 8;
+int dutyCycle = 255; // sets pwm cycle
 
 
-// REPLACE WITH YOUR RECEIVER MAC Address
-// If the address in lowercase change it to uppercase!!!
-uint8_t broadcastAddress[] = {0xA8, 0x42, 0xE3, 0xC8, 0x2d, 0x84};
-
-
-
-
-// Structure example to send data
-// Must match the receiver structure****
+// Structure example to receive data
+// Must match the sender structure****
 typedef struct struct_message {
-  // defines the data type you are sending
-
-  // Right Data
   int rightJoyXvalue;
   int rightJoyYvalue;
   int rightJoySWvalue;
-
-  // Left Data 
-  // [Add if using 2 Joysticks]
-  // int leftJoyXvalue;
-  // int leftJoyYvalue;
-  // int leftJoySWvalue;
-
-
+  int leftJoyXvalue;
+  int leftJoyYvalue;
+  int leftJoySWvalue;
 } struct_message;
 
-
+int moveForward;
+int moveBackward;
+int rotateLeft;
+int rotateRight;
+int moveSidewaysRight;
+int moveSidewaysLeft;
 
 // Create a struct_message called myData
-struct_message handControllerData;
+struct_message readingData;
 
-// Don't ask me idk what this is 
-esp_now_peer_info_t peerInfo;
+// callback function that will be executed when data is received
+void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
+  memcpy(&readingData, incomingData, sizeof(readingData));
+  Serial.print("Bytes received: ");
+  Serial.println(len);
+
+  // Testing the right joystick values
+  // Serial.print("Right Joystick X Value: ");
+  // Serial.println(readingData.rightJoyXvalue);
+  // Serial.print("Right Joystick Y Value: ");
+  // Serial.println(readingData.rightJoyYvalue);
+  // Serial.print("Right Switch Value: ");
+  // Serial.println(readingData.rightJoySWvalue);
+  // Serial.println();
 
 
 
-// callback when data is sent
-void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
-  Serial.print("\r\nLast Packet Send Status:\t");
-  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
+//Right Joystick Forward/Backward/Left/Right
+if (readingData.rightJoyXvalue > 2000){
+  Serial.print(readingData.rightJoyXvalue);
+  digitalWrite(motor1Pin1, HIGH);
+  digitalWrite(motor1Pin2, LOW);
+  ledcWrite(enable1Pin, dutyCycle);
+  Serial.println("Forward");
+  delay(20);
 }
 
+if (readingData.rightJoyXvalue < 1000){
+  Serial.print(readingData.rightJoyXvalue);
+  digitalWrite(motor1Pin1, LOW);
+  digitalWrite(motor1Pin2, HIGH);
+  ledcWrite(enable1Pin, dutyCycle);
+  Serial.println("Backward");
+}
+
+if (readingData.rightJoyYvalue > 2000){
+  Serial.print(readingData.rightJoyXvalue);
+  Serial.println("Right");
+}
+
+if (readingData.rightJoyYvalue < 1000){
+  Serial.print(readingData.rightJoyXvalue);
+  Serial.println("Left");
+}
+
+
+  // Testing the left joystick values
+  // Serial.print("Left Joystick X Value: ");
+  // Serial.println(readingData.leftJoyXvalue);
+  // Serial.print("left Joystick Y Value: ");
+  // Serial.println(readingData.leftJoyYvalue);
+  // Serial.print("Left Switch Value: ");
+  // Serial.println(readingData.leftJoySWvalue);
+  // Serial.println();
+
+
+// // Left Joystick Forward/Backward/Left/Right
+// if (readingData.leftJoyXvalue > 2000){
+//   Serial.println("Forward");
+// }
+
+// if (readingData.leftJoyXvalue < 1000){
+//   Serial.println("Backward");
+// }
+
+// if (readingData.leftJoyYvalue > 2000){
+//   Serial.println("Right");
+// }
+
+// if (readingData.leftJoyYvalue < 1000){
+//   Serial.println("Left");
+
+// }
+  // moveForward = readingData.rightJoyXvalue;
+  // Serial.print("Right Joystick X Value: ");
+  // Serial.println(readingData.rightJoyXvalue);
+  // Serial.println();
+  // Serial.println(readingData.rightJoySWvalue);
+  // Serial.println();
+  // digitalWrite(RightFrontFWD, moveForward);
+  // digitalWrite(RightBackFWD, moveForward);
+  // digitalWrite(LeftFrontFWD, moveForward);
+  // digitalWrite(LeftBackFWD, moveForward);
+
+  // moveBackward = readingData.leftJoyXvalue;
+  // Serial.print("Left Joystick X Value: ");
+  // Serial.println(readingData.leftJoyXvalue);
+  // Serial.println();
+  // digitalWrite(RightFrontBWD, moveBackward);
+  // digitalWrite(RightBackBWD, moveBackward);
+  // digitalWrite(LeftFrontBWD, moveBackward);
+  // digitalWrite(LeftBackBWD, moveBackward);
+
+  // rotateLeft = readingData.leftJoyYvalue;
+  // Serial.print("Left Joystick Y Value: ");
+  // Serial.println(readingData.leftJoyYvalue);
+  // Serial.println();
+  // digitalWrite(RightFrontFWD, rotateLeft);
+  // digitalWrite(RightBackFWD, rotateLeft);
+  // digitalWrite(LeftFrontBWD, rotateLeft);
+  // digitalWrite(LeftBackBWD, rotateLeft);
+}
+ 
 void setup() {
-  // Init Serial Monitor
+  // Initialize Serial Monitor
   Serial.begin(115200);
 
-  // Right Joystick Configuration
-  pinMode(rightJoyX, INPUT);
-  pinMode(rightJoyY, INPUT);
-  pinMode(rightJoySW, INPUT);
+  // Motors are Output
+  pinMode(motor1Pin1, OUTPUT);
+  pinMode(motor1Pin2, OUTPUT);
+  pinMode(enable1Pin, OUTPUT);
 
-  // Left Joystick Configuration
-  // [Add if using 2 Joysticks]
-  // pinMode(leftJoyX, INPUT);
-  // pinMode(leftJoyY, INPUT);
-  // pinMode(leftJoySW, INPUT);
+  // configures the LEDC PWM
+  ledcAttachChannel(enable1Pin, freq, resolution, pwmChannel);
 
-
-
-  // Set device as a Wi-Fi Station this means to recieve
+  // pinMode(RightFrontFWD, OUTPUT);
+  // pinMode(RightBackFWD, OUTPUT);
+  // pinMode(RightBackBWD, OUTPUT);
+  // pinMode(LeftFrontFWD, OUTPUT);
+  // pinMode(LeftFrontBWD, OUTPUT);
+  // pinMode(LeftBackFWD, OUTPUT);
+  // pinMode(LeftBackBWD, OUTPUT);
+  
+  // Set device as a Wi-Fi Station
   WiFi.mode(WIFI_STA);
-
 
   // Init ESP-NOW
   if (esp_now_init() != ESP_OK) {
     Serial.println("Error initializing ESP-NOW");
     return;
   }
-
-  // Once ESPNow is successfully Init, we will register for Send CB to
-  // get the status of Trasnmitted packet
-  esp_now_register_send_cb(OnDataSent);
-
-  // Register peer
-  memcpy(peerInfo.peer_addr, broadcastAddress, 6);
-  peerInfo.channel = 0;
-  peerInfo.encrypt = false;
-
-  // Add peer
-  if (esp_now_add_peer(&peerInfo) != ESP_OK) {
-    Serial.println("Failed to add peer");
-    return;
-  }
-}
-
-
-
-
-void loop() {
-  // Set values to send
-
-  // Right Data Send
-  rightJoyXstate = analogRead(rightJoyX);
-  handControllerData.rightJoyXvalue = rightJoyXstate;
-  rightJoyYstate = analogRead(rightJoyY);
-  handControllerData.rightJoyYvalue = rightJoyYstate;
-  rightJoySWstate = digitalRead(rightJoySW);
-  handControllerData.rightJoySWvalue = rightJoySWstate;
-
-  // Left Data Send
-  // [Add if using 2 Joysticks]
-  // leftJoyXstate = analogRead(leftJoyX);
-  // handControllerData.leftJoyXvalue = leftJoyXstate;
-  // leftJoyYstate = analogRead(leftJoyY);
-  // handControllerData.leftJoyYvalue = leftJoyYstate;
-  // leftJoySWstate = digitalRead(leftJoySW);
-  // handControllerData.leftJoySWvalue = leftJoySWstate;
   
+  // Once ESPNow is successfully Init, we will register for recv CB to
+  // get recv packer info
+  esp_now_register_recv_cb(esp_now_recv_cb_t(OnDataRecv));
+}
+ 
+void loop() {
 
 
-  // Send message via ESP-NOW
-  esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &handControllerData, sizeof(handControllerData));
 
-  if (result == ESP_OK) {
-    Serial.println("Sent with success");
-  }
-  else {
-    Serial.println("Error sending the data");
-  }
-  delay(50);
+ 
+
 }
