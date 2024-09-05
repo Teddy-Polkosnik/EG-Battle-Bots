@@ -140,7 +140,7 @@ This competition allows you to get pretty creative in that you are allowed to us
 **3D Printer:**
 - PLA - 20% infill density maximum (default wall amount + size)
 - PLA-CF - 20% infill density maximum (default wall amount + size)
-- ABS - 15% infill density maximum (only 1 submission total per group)
+- ABS - 15% infill density maximum (1st come 1st serve)
 
 **OL Crafting Table:**
 - Cardboard - Any
