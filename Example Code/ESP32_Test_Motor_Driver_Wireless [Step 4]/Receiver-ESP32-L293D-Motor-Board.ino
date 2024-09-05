@@ -1,14 +1,18 @@
+
+// Created by Teddy Polkosnik
+
 #include <esp_now.h>
 #include <WiFi.h>
 
-int motor1Pin1 = 27; 
-int motor1Pin2 = 26; 
-int enable1Pin = 14; 
+// MOTOR 1 Pins
+int motor1Pin1 = 27; // in1 = pin 27
+int motor1Pin2 = 26; // in2 = pin 26
+int enable1Pin = 14; // ena = pin 14
 
 const int freq = 30000;
 const int pwmChannel = 0;
 const int resolution = 8;
-int dutyCycle = 255;
+int dutyCycle = 255; // sets pwm cycle
 
 
 // Structure example to receive data
