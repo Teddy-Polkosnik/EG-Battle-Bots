@@ -4,16 +4,23 @@
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.  
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 *********/
+
+// THIS CODE SHOULD BE USED TO TEST THAT THE DC MOTOR WORKS 
+// NOTE THAT THIS IS NOT WIRELESS IT IS JUST TO MAKE SURE YOUR MOTOR WORKS 
+
+
 // Motor A
-int motor1Pin1 = 27; 
-int motor1Pin2 = 26; 
-int enable1Pin = 14; 
+int motor1Pin1 = 27; // in1 = pin 27
+int motor1Pin2 = 26; // in2 = pin 26
+int enable1Pin = 14; // ena = pin 14 
 
 // Setting PWM properties
 const int freq = 30000;
 const int pwmChannel = 0;
 const int resolution = 8;
-int dutyCycle = 200;
+int dutyCycle = 200; // sets pwm cycle
+
+
 
 void setup() {
   // sets the pins as outputs:
