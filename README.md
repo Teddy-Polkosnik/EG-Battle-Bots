@@ -1,4 +1,4 @@
-<div align= "center">
+  <div align= "center">
 
 # EG Battle Bots
 **Small Scale Battle Bots Competition Created By: Teddy Polkosnik**
@@ -130,7 +130,7 @@ Ideal/Expected Timeline:
 
 
 ## Materials:
-This competition allows you to get pretty creative in that you are allowed to use most materials in OL with the exception of any and all VEX parts. All print requests will be submitted to proto through a google sheet and printed based on a “first come first serve basis”.
+This competition allows you to get pretty creative in that you are allowed to use most materials in OL with the exception of any metal VEX parts. All print requests will be submitted to proto through a google sheet and printed based on a “first come first serve basis”.
 
 > [!CAUTION]
 > DISCLAIMER: Proto is allowed to add or subtract from this list at any point in time to ensure safety and fairness.
@@ -154,6 +154,7 @@ This competition allows you to get pretty creative in that you are allowed to us
 **Sensors/Motors:**
 - Servos - (Big or Small, Continuous, Positional)
 - DC Motors - (5V, 7V, 9V)
+- Vex Motor 
 - Stepper Motors - (5V, 12V)
 - Ultrasonic Sensor - Any
 - Cameras - Any
@@ -169,12 +170,14 @@ This competition allows you to get pretty creative in that you are allowed to us
 **Others:**
 - Breadboard - Any
 - Solder/Soldering - Any
+- Vex Rectangular Shaft (cannot be used as a weapon)
 - Motor Drivers - Any
-- Motor Shields - Any 
+- Motor Shields - Any
+- Battery (1.5, 3, 7, 9 Volts)
 
 ### Prohibited Materials:
 **General:**
-- Any Vex Parts - (no metal of any kind, motors, wheels, or gears)
+- Any Vex Parts - (no metal of any kind, or gears)
 - Any Metal - (dangerous)
 - Any Liquids - (dangerous)
 - Toxic/Hazardous Things - (dangerous)
