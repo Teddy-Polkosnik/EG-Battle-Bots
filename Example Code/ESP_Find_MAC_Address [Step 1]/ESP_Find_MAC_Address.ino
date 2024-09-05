@@ -12,8 +12,11 @@
 #endif
 
 void setup(){
+
+  // Make sure to set your Serial Monitor to 115200
   Serial.begin(115200);
 
+  // The MAC Address is needed in order to pair ESP32's together!
   Serial.print("ESP Board MAC Address: ");
   #ifdef ESP32
     WiFi.mode(WIFI_STA);
