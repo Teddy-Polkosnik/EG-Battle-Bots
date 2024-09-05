@@ -7,9 +7,11 @@
 #include <esp_now.h>
 #include <WiFi.h>
 
-// REPLACE WITH YOUR ESP RECEIVER'S MAC ADDRESS
+// REPLACE WITH YOUR ESP RECEIVER'S MAC ADDRESS !!!
 uint8_t broadcastAddress1[] = {0xA8, 0x42, 0xE3, 0xC8, 0x2d, 0x84};
 
+
+// This is the data that you will be sending to the reciver ESP
 typedef struct test_struct {
   int x;
   int y;
@@ -18,6 +20,8 @@ typedef struct test_struct {
 test_struct test;
 
 esp_now_peer_info_t peerInfo;
+
+
 
 // callback when data is sent
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
@@ -30,6 +34,8 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.print(" send status:\t");
   Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
 }
+
+
  
 void setup() {
   Serial.begin(115200);
@@ -53,16 +59,22 @@ void setup() {
     return;
   }
 }
- 
+
+// DATA BEING SENT 
+// Here it is generation random numbers from range (0,20) but you can adjust to be sensor data instead...
 void loop() {
   test.x = random(0,20);
   test.y = random(0,20);
  
   esp_err_t result = esp_now_send(0, (uint8_t *) &test, sizeof(test_struct));
-   
+
+
+  // if get sent you get this msg
   if (result == ESP_OK) {
     Serial.println("Sent with success");
   }
+    
+  // if fail you get this msg
   else {
     Serial.println("Error sending the data");
   }
